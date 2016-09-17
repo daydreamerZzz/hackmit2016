@@ -1,1 +1,1 @@
-# hackmit2016
+# HackMIT 2016
