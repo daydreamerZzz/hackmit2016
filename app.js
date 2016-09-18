@@ -9,8 +9,11 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
+var account = require('./routes/account');
+var list = require('./routes/list');
 
 var firebase = require('firebase');
+
 
 
 
@@ -32,6 +35,8 @@ app.use(cookieParser());
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api', api);
+app.use('/account', account);
+app.use('/list', list);
 
 
 app.use('/user/:id', function(req, res, next){
