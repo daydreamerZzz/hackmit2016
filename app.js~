@@ -11,10 +11,13 @@ var users = require('./routes/users');
 var api = require('./routes/api');
 var account = require('./routes/account');
 var list = require('./routes/list');
+<<<<<<< HEAD
+=======
 var hard_client = {};
 hard_client["XSv5O9KD.html"] = require('./routes/XSv5O9KD');
 hard_client["j8GNRHNj.html"] = require('./routes/j8GNRHNj');
 hard_client["WUoz7A09.html"] = require('./routes/WUoz7A09');
+>>>>>>> 7c4adcfd32d7dde13dbac258919c11ecbadff433
 
 var firebase = require('firebase');
 

@@ -9,7 +9,7 @@ window.addEventListener('load', function() {
 	    var uid_short = result.user.uid.slice(0,8);
 	    console.log(uid_short);
 	    console.log(result);
-	    window.location.href = '/user/' + uid_short;
+	    window.location.href = '/user/' + uid_short + '.html';
 	});
     });
 });
