@@ -34,6 +34,13 @@ app.use('/users', users);
 app.use('/api', api);
 
 
+app.use('/user/:id', function(req, res, next){
+    var data = '<h1>hello world</h1>';
+    res.writeHead(200, {'Content-Type':'text/html'});
+    res.end(data);
+
+});
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');
