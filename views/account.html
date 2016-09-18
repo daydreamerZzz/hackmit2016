@@ -30,7 +30,7 @@ Licensed under MIT
 			<div class="profile-sidebar">
 				<!-- SIDEBAR USERPIC -->
 				<div class="profile-userpic">
-					<img src="images/photo.jpg" class="img-responsive" alt="" >
+					<img src="images/push.png" class="img-responsive" alt="" >
 				</div>
 				<!-- END SIDEBAR USERPIC -->
 				<!-- SIDEBAR USER TITLE -->
@@ -58,19 +58,19 @@ Licensed under MIT
 						<li class="active">
 							<a href="#">
 							<i class="glyphicon glyphicon-home"></i>
-							Overview </a>
-						</li>
-						<li>
-							<a href="#">
-							<i class="glyphicon glyphicon-user"></i>
 							My Recipes </a>
 						</li>
 						<li>
+							<a href="/list">
+							<i class="glyphicon glyphicon-user"></i>
+							Other Recipes </a>
+						</li>
+						<!-- <li>
 							<a href="#" target="_blank">
 							<i class="glyphicon glyphicon-ok"></i>
               Account Settings
                </a>
-						</li>
+						</li> -->
 						<li>
 							<a href="#">
 							<i class="glyphicon glyphicon-flag"></i>
@@ -118,14 +118,70 @@ Licensed under MIT
                     <div class="panel-heading" role="tab" id="headingOne">
                       <h4 class="panel-title">
                         <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                          Collapsible Group Item #1
+                          World's Best Cookies
                         </a>
                       </h4>
                     </div>
                     <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                       <div class="panel-body">
-                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        This is a summary of what this recipe will make.
                       </div>
+                      <!-- <button type="button" class="btn btn-default-sm" data-dismiss="modal"> Show more</button> -->
+
+                      <!-- Button trigger modal -->
+<button type="button" class="btn btn-info btn-sm" style = "float: right" data-toggle="modal" data-target="#myModal">
+  Show recipe
+</button>
+
+<button type="button" class="btn btn-info btn-sm" style = "align: right" data-toggle="modal" data-target="#myModal1">
+  Show recipe tree
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">World's Best Cookies</h4>
+      </div>
+      <div class="modal-body">
+        World's Best Cookie Recipe:
+        <br>
+
+        1 cup butter <br>
+        2 eggs <br>
+        4 cups flour<br>
+
+        Mix all ingredients together.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">World's Best Cookies</h4>
+      </div>
+      <div class="modal-body">
+        This will display the tree view of the recipe. 
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+      </div>
+    </div>
+  </div>
+</div>
+
                     </div>
                   </div>
 

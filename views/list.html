@@ -1,33 +1,29 @@
 <!DOCTYPE html>
 <html>
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<script type="text/javascript" src="list.js"> </script>
-
-<link rel="stylesheet" href="list.css">
-
 <head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="js/list.js"> </script>
+
+<link rel="stylesheet" href="stylesheet/list.css">
+
   <nav class="navbar navbar-light bg-faded">
-    <ul class="nav navbar-nav-right">
+    <ul class="nav navbar-nav">
       <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-link" href="/account">Home <span class="sr-only">(current)</span></a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">My Account</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#"></a>
-      </li>
+
+
     </ul>
   </nav>
 
@@ -36,13 +32,37 @@
 
 <body>
 
+<!--
+  <div class="card">
+  <img class="card-img-top" src="images/push1.png" style="width:40%"alt="Card image cap">
+  <div class="card-block">
+    <h4 class="card-title">Spagehetti</h4>
+    <p class="card-text"> This recipe will teach you how to make your mother's favorite spagehetti and meatballs.</p>
+    <a href="#" class="btn btn-primary"> View recipe</a>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    Featured
+  </div>
+  <div class="card-block">
+    <h4 class="card-title">Special title treatment</h4>
+    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+    <a href="#" class="btn btn-primary">Go somewhere</a>
+  </div>
+</div> -->
+
+
+
+
   <div class="list-group">
   <div class = "parent">
-  <a href="#" class="list-group-item"> Pasta <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+  <a href="#" class="list-group-item"> Pasta <button type="button" style = "float: right" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
     View recipe </button> </a>
   </div>
   <div>
-  <a href="#" class="list-group-item"> Add more salt <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
+  <a href="#" class="list-group-item"> Add more salt <button type="button" style = "float: right" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#myModal">
     View recipe </button> </a>
   <a href="#" class="list-group-item"> Add pepper</a>
   <a href="#" class="list-group-item"> Add tomato paste</a>
