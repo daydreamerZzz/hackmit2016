@@ -11,6 +11,7 @@ var users = require('./routes/users');
 var api = require('./routes/api');
 var account = require('./routes/account');
 var list = require('./routes/list');
+var hello = require('./routes/hello'); // looks for hellojs
 
 var firebase = require('firebase');
 
@@ -37,6 +38,7 @@ app.use('/users', users);
 app.use('/api', api);
 app.use('/account', account);
 app.use('/list', list);
+app.use('/hello', hello);
 
 
 app.use('/user/:id', function(req, res, next){
