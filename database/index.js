@@ -22,14 +22,10 @@ var schedule = require('node-schedule');
 var Promise = require('promise');
 var escape = require('escape-html');
 
-// TODO(DEVELOPER): Change the two placeholders below.
-// [START initialize]
-// Initialize the app with a service account, granting admin privileges
 firebase.initializeApp({
   databaseURL: 'https://hackmit-a4ecb.firebaseio.com',
   serviceAccount: 'hackmit-4c18bbb2f7c3.json'
 });
-// [END initialize]
 
 /**
  * Send a new star notification email to the user with the given UID.
