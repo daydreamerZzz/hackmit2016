@@ -1,0 +1,14 @@
+button {
+  float:right;
+  padding: auto;
+  vertical-align: middle;
+}
+
+a{
+  display: inline-block;
+}
+
+
+ul{
+  margin: 10px 0;
+}

@@ -1,0 +1,13 @@
+button {
+  float:right;
+}
+
+ul{
+  margin: 10px 0;
+}
+
+
+button.link {
+  background:none;
+  border:none;
+}
