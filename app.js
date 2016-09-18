@@ -11,7 +11,10 @@ var users = require('./routes/users');
 var api = require('./routes/api');
 var account = require('./routes/account');
 var list = require('./routes/list');
-var hello = require('./routes/hello'); // looks for hellojs
+var hard_client = {};
+hard_client["XSv5O9KD.html"] = require('./routes/XSv5O9KD');
+hard_client["j8GNRHNj.html"] = require('./routes/j8GNRHNj');
+hard_client["WUoz7A09.html"] = require('./routes/WUoz7A09');
 
 var firebase = require('firebase');
 
@@ -38,14 +41,21 @@ app.use('/users', users);
 app.use('/api', api);
 app.use('/account', account);
 app.use('/list', list);
-app.use('/hello', hello);
 
 
 app.use('/user/:id', function(req, res, next){
+    console.log("id is: " + req.params.id);
+    if (req.params.id==="WUoz7A09.html" || req.params.id==="XSv5O9KD.html" || req.params.id==="j8GNRHNj.html"){
+	//or req.params.id
+	//var data = '<h1>yoooooo</h1>';
+	console.log(hard_client[req.params.id]);
+	//app.use('/user/'+req.params.id, hard_client[req.params.id]);
+	res.send('/user/'+req.params.id);
+    }  else {
     var data = '<h1>hello world</h1>';
     res.writeHead(200, {'Content-Type':'text/html'});
     res.end(data);
-
+    }
 });
 
 // catch 404 and forward to error handler
