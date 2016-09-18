@@ -9,6 +9,7 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
+var hello = require('./routes/hello'); // looks for hellojs
 
 var firebase = require('firebase');
 
@@ -32,6 +33,7 @@ app.use(cookieParser());
 app.use('/', routes);
 app.use('/users', users);
 app.use('/api', api);
+app.use('/hello', hello);
 
 
 app.use('/user/:id', function(req, res, next){

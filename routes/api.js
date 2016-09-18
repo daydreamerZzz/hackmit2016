@@ -25,10 +25,10 @@ router.get('/nodes/:nodeid', function(req, res, next) {
   // var json = some firebase function
   var json =
   {
-    root_node: 0,
-    node_id: 0,
-    user_name: "Mrs. Smith",
-    user_id: "13442ld",
+    rootnode: 0,
+    nodeid: 0,
+    username: "Mrs. Smith",
+    userid: "13442ld",
     ingredients: [
       {
         name: 'cheese',
@@ -45,6 +45,46 @@ router.get('/nodes/:nodeid', function(req, res, next) {
   }
 
   res.send(json);
-})
+});
+
+// creates new user
+router.post('/create/user', function(req, res, next) {
+  // TODO: req should come from the function, this is temporary
+  var req =
+  {
+    username: "kelly",
+    userid: "123e6df"
+  };
+  res.send(req);
+});
+
+
+// creates new node under user specified by userid
+router.post('/create/node', function(req, res, next) {
+  // TODO: req should come from the function, this is temporary
+  // copy data to firebase
+  var req =
+  {
+    rootnode: 0,
+    nodeid: 0,
+    username: "Mrs. Smith",
+    userid: "13442ld",
+    ingredients: [
+      {
+        name: 'cheese',
+        unit: 'oz',
+        amount: '4'
+      }
+    ],
+    instructions: [
+      "heat oven to 350 deg"
+    ],
+    servings: 8,
+    children: [4,5,6],
+    categories: ["dinner"]
+  };
+
+  res.send(req);
+});
 
 module.exports = router;
