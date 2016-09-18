@@ -1,1 +1,24 @@
-Hello World
+<html lang="en">
+
+  <head>
+    <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+      apiKey: "AIzaSyB-MHsyAlr8JIoyZ1ojPajaGM_I4bQIPn4",
+      authDomain: "hmit2-bddd5.firebaseapp.com",
+      databaseURL: "https://hmit2-bddd5.firebaseio.com",
+      storageBucket: "hmit2-bddd5.appspot.com",
+      messagingSenderId: "607521401647"
+        };
+      firebase.initializeApp(config);
+    </script>
+  </head>
+
+  <body>
+    <div>
+      <button id="sign-in-button" class="mdl-button--raised mdl-button mdl-js-button mdl-js-ripple-effect" action="load">Sign in with Google</button>
+    </div>
+    <script src="/js/index.js"></script>
+  </body>
+</html>
